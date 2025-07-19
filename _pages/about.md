@@ -41,5 +41,6 @@ Courses & Skills
 
 **Frameworks / Libraries:** React · Node.js / Express · PyTorch · Vue.js
 
-**Developer & Cloud Tools:** Git · Linux · AWS (Lambda) · Google Cloud Platform · Docker · PyCharm · VS Code · Unity Hub
+**Developer & Cloud Tools:** Git · Linux · AWS(Lambda) · Google Cloud Platform · Docker · pyCharm · VS Code · Unity Hub
+
 ---
