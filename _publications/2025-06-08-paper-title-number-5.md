@@ -1,13 +1,25 @@
 ---
-title: "Paper Title Number 5, with math $$E=mc^2$$"
+title: "VirT‑Lab: An AI‑Powered System for Flexible, Customizable, and Large‑Scale Team Simulations"
+authors:
+  - "Mohammed Almutairi"
+  - "Charles Chiang"
+  - "Haoze Guo"
+  - "Matthew Belcher"
+  - "Nandini Banerjee"
+  - "Maria Milkowski"
+  - "Svitlana Volkova"
+  - "Daniel Nguyen"
+  - "Tim Weninger"
+  - "Michael Yankoski"
+  - "Trenton W. Ford"
+  - "Diego Gomez‑Zara"
 collection: publications
 category: conferences
-permalink: /publication/2024-02-17-paper-title-number-4
-excerpt: 'This paper is about a famous math equation, $$E=mc^2$$'
-date: 2024-02-17
-venue: 'GitHub Journal of Bugs'
-paperurl: 'http://academicpages.github.io/files/paper3.pdf'
-citation: 'Your Name, You. (2024). &quot;Paper Title Number 3.&quot; <i>GitHub Journal of Bugs</i>. 1(3).'
+permalink: /publication/virt‑lab‑2025‑uist‑demo
+excerpt: "We introduce VirT‑Lab, a user‑friendly, customizable, multi‑agent, and scalable team simulation system leveraging LLM agents in spatial and temporal environments."  
+date: 2025-07-18  
+venue: "ACM Symposium on User Interface Software and Technology (UIST) 2025 Demo"  
+paperurl: "http://academicpages.github.io/files/2025_UIST_Demo__VirtLab_Project.pdf"  
+citation: "Mohammed Almutairi, Charles Chiang, Haoze Guo, Matthew Belcher, Nandini Banerjee, Maria Milkowski, Svitlana Volkova, Daniel Nguyen, Tim Weninger, Michael Yankoski, Trenton W. Ford, and Diego Gomez‑Zara."  
 ---
 
-Using [MathJax](https://www.mathjax.org/) in the description is supported - $$E=mc^2$$ - however, the use must be mindful that the default delimiters are `$$...$$` and `\\[...\\]` which differs from the `$...$` that is typically expected.
