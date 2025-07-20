@@ -1,12 +1,14 @@
 ---
 title: "Speech Recognition Trash Can"
-excerpt: "Voice‑activated smart bin with Mandarin command recognition (≈93% accuracy).<br/><img src='/images/project3.jpg' style='max-width:260px;border-radius:8px;'>"
+excerpt: >
+  Voice‑activated smart bin with Mandarin command recognition (≈93% accuracy).<br/>
+  <img src='{{ "/images/project3.jpg" | relative_url }}' style='max-width:260px;border-radius:8px;'>
 collection: portfolio
 permalink: /portfolio/speech-recognition-trash-can
-keywords: [embedded, speech-recognition, python, matlab, hardware, hci]
+
 ---
 
-![Speech Recognition Trash Can](/images/project3.jpg)
+![Speech Recognition Trash Can]({{ "/images/project3.jpg" | relative_url }})
 
 ### Overview
 A **voice-activated disposal system** that opens its lid in response to natural Mandarin commands (e.g., “打开” *open*, “关闭” *close*). The device combines an **HBR640 speech recognition chip** with a microcontroller, Python/MATLAB offline training utilities, and simple on‑device keyword classification. The result: **~93% command recognition accuracy** and a ~19% functional improvement (hands‑free accessibility & reduced false trigger rate versus baseline IR‑only lid systems).
