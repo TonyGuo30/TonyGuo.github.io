@@ -45,13 +45,6 @@ The mini‑program is **fully copyrighted** and is being rolled out through loca
 
 ---
 
-### Deployment & Outreach
-- **Pilot communities:** Partnered with local disability service centres to distribute QR codes.  
-- **Federation support:** Working with the Disabled Persons’ Federation to onboard larger user cohorts.  
-- **Copyright:** Mini‑program software copyright filing submitted (ref ID: XYZ‑2025‑07).
-
----
-
 ### Impact
 > **Goal:** Increase inclusive employment placements by **≥ 25 %** in participating communities within 12 months.
 
@@ -63,9 +56,7 @@ The mini‑program is **fully copyrighted** and is being rolled out through loca
 
 ---
 
-### Next Steps
-1. **Accessibility testing** with low‑vision and motor‑impairment users.  
-2. **API hardening** to integrate third‑party assistive technologies.  
-3. **Scalable cron jobs** for daily digest messages & job‑match recommendations.
+### Acknowledgements
+Special thanks to community volunteers, pilot companies, and the **Disabled Persons’ Federation** for continuous feedback and outreach support.
 
 ---
