@@ -2,7 +2,7 @@
 title: "Speech Recognition Trash Can"
 excerpt: >
   Voice‑activated smart bin with Mandarin command recognition (≈93% accuracy).<br/>
-  <img src='{{ "/images/project3.jpg" }}' style='max-width:260px;border-radius:8px;'>
+  <img src='{{ "/images/project3.jpg" | relative_url }}' style='max-width:260px;border-radius:8px;'>
 collection: portfolio
 permalink: /portfolio/speech-recognition-trash-can
 
