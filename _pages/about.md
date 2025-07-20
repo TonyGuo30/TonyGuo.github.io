@@ -11,7 +11,7 @@ I am **Tony** (Haoze) Guo, currently pursuing my Bachelor of Science in **Comput
 
 My primary research interests include **Human-Computer Interaction (HCI)**, **Natural Language Processing (NLP)**, **Social Computing**, and **AI-powered interactive systems**. I'm particularly passionate about creating intuitive, scalable, and user-centered interactive technologies.
 
-Currently, I am leading frontend optimization efforts for **VirT-Lab**, an AI-powered multi-agent simulation platform, supervised by **Prof. Diego Gómez-Zará**. My role involves enhancing real-time interactions and visualization capabilities to support effective human-AI collaboration.
+Currently, I am leading frontend optimization efforts for **VirT-Lab**, an AI-powered multi-agent simulation platform, supervised by **[Prof. Diego Gómez-Zará](https://engineering.nd.edu/faculty/diego-gomez-zara/)**. My role involves enhancing real-time interactions and visualization capabilities to support effective human-AI collaboration.
 
 Feel free to explore my website for more details on my research projects, publications, and technical background!
 
