@@ -1,11 +1,9 @@
 ---
 title: "Speech Recognition Trash Can"
-excerpt: >
-  Voice-activated smart bin with Mandarin command recognition (≈93% accuracy).<br/>
-  <img src="{{ '/images/project3.jpg' | relative_url }}" alt="Portfolio preview" style="max-width:260px;border-radius:8px;">
+excerpt: "Voice-activated smart bin with Mandarin command recognition (≈93% accuracy)."
+teaser: /images/project3.jpg # <-- Add this line
 collection: portfolio
 permalink: /portfolio/speech-recognition-trash-can
-
 ---
 
 ![Speech Recognition Trash Can]({{ "/images/project3.jpg" | relative_url }})
