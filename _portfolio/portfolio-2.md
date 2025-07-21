@@ -1,11 +1,11 @@
 ---
 title: "Employment‑Access WeChat Mini‑Program for People with Disabilities"
 excerpt: >
-  Cloud‑database–powered WeChat mini‑program that connects **job‑seeking people with disabilities** to **companies & social‑welfare recruiters**.<br/>
-  <img src="/images/disabled-employment-cover.jpg" alt="Portfolio preview" style="max-width:260px;border-radius:8px;">
+  Cloud‑database–powered WeChat mini‑program that connects **job‑seeking people with disabilities** to **companies & social‑welfare recruiters**.
 collection: portfolio
 permalink: /portfolio/employment-miniprogram-disabled
-
+header:
+  teaser:"disabled-employment-cover.jpg"
 ---
 
 ![Employment‑Access Mini‑Program]({{ '/images/disabled-employment-cover.jpg' | relative_url }})
