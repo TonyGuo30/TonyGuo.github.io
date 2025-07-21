@@ -1,28 +1,52 @@
-/* --- Custom CSS for Side-by-Side Portfolio Layout --- */
+/* --- Advanced Styling for "About Me" Page (No Link Animation) --- */
 
-/* 1. Style the main container for each portfolio item */
-.archive__item {
-  /* This "clearfix" is important to make sure the container properly wraps the floated image */
-  &::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+/* 1. Import a Modern Font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Slab:wght@700&display=swap');
+
+/* 2. Apply Upgraded Typography */
+body {
+  font-family: 'Inter', sans-serif; /* A clean, modern font for body text */
+  line-height: 1.7; /* Improves readability */
 }
 
-/* 2. Style the image container */
-.archive__item-teaser {
-  float: left; /* This moves the image to the left */
-  width: 250px; /* Adjust the width of your image here */
-  margin-right: 2em; /* Creates space between the image and the text */
-  margin-bottom: 1.5em; /* Adds space below the image on small screens */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab', serif; /* A distinct, professional font for headings */
+  letter-spacing: -0.5px; /* Tightens up letter spacing for a sharper look */
 }
 
-/* 3. Make it responsive for mobile phones */
-@media screen and (max-width: 768px) {
-  .archive__item-teaser {
-    float: none; /* Disables the float on small screens */
-    width: 100%; /* Makes the image full-width */
-    margin-right: 0; /* Removes the side margin */
-  }
+/* Make the main title pop */
+h1.page__title {
+  font-size: 3.5em; /* A bit larger for more impact */
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Style the bolded text to stand out more */
+strong {
+  color: #0056b3; /* A slightly different color to draw attention */
+}
+
+
+/* 3. Add "Fancy" Features & Interactive Elements */
+
+/* Keep link transitions smooth, but remove background animation */
+a {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Style the horizontal lines (HR) as gradient dividers */
+hr {
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));
+}
+
+/* Style the NEWS blockquotes */
+blockquote {
+  border-left: 5px solid #8fd3f4; /* A colored border */
+  background-color: #f8f9fa; /* A subtle background */
+  padding: 15px 20px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.03); /* A very subtle shadow */
+  font-style: italic;
+  color: #555;
 }
