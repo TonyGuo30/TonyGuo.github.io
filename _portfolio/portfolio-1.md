@@ -1,8 +1,8 @@
 ---
 title: "Speech Recognition Trash Can"
 excerpt: >
-  Voice‑activated smart bin with Mandarin command recognition (≈93% accuracy).<br/>
-  <img src="/images/project3.jpg" alt="Portfolio preview" style="max-width:260px;border-radius:8px;">
+  Voice-activated smart bin with Mandarin command recognition (≈93% accuracy).<br/>
+  <img src="{{ '/images/project3.jpg' | relative_url }}" alt="Portfolio preview" style="max-width:260px;border-radius:8px;">
 collection: portfolio
 permalink: /portfolio/speech-recognition-trash-can
 
@@ -11,12 +11,12 @@ permalink: /portfolio/speech-recognition-trash-can
 ![Speech Recognition Trash Can]({{ "/images/project3.jpg" | relative_url }})
 
 ### Overview
-A **voice-activated disposal system** that opens its lid in response to natural Mandarin commands (e.g., “打开” *open*, “关闭” *close*). The device combines an **HBR640 speech recognition chip** with a microcontroller, Python/MATLAB offline training utilities, and simple on‑device keyword classification. The result: **~93% command recognition accuracy** and a ~19% functional improvement (hands‑free accessibility & reduced false trigger rate versus baseline IR‑only lid systems).
+A **voice-activated disposal system** that opens its lid in response to natural Mandarin commands (e.g., “打开” *open*, “关闭” *close*). The device combines an **HBR640 speech recognition chip** with a microcontroller, Python/MATLAB offline training utilities, and simple on-device keyword classification. The result: **~93% command recognition accuracy** and a ~19% functional improvement (hands-free accessibility & reduced false trigger rate versus baseline IR-only lid systems).
 
 ---
 
 ### Problem & Motivation
-Conventional “automatic” trash cans rely on IR proximity sensors—triggering accidentally (pets, passersby), wasting power, and offering no multi‑command interaction (e.g., timed open). The goal was to enable *intent-driven*, hygienic interaction using **low‑cost embedded speech recognition** tuned for Mandarin commands without requiring cloud connectivity.
+Conventional “automatic” trash cans rely on IR proximity sensors—triggering accidentally (pets, passersby), wasting power, and offering no multi-command interaction (e.g., timed open). The goal was to enable *intent-driven*, hygienic interaction using **low-cost embedded speech recognition** tuned for Mandarin commands without requiring cloud connectivity.
 
 ---
 
@@ -41,5 +41,3 @@ Conventional “automatic” trash cans rely on IR proximity sensors—triggerin
 | 3 | 停止 | ting zhi | Halt motion (safety) |
 | 4 | 暂停 | zan ting | Pause open timer |
 | 5 | 垃圾桶 | la ji tong | Wake / attention (hotword) |
-
----
