@@ -1,0 +1,28 @@
+/* --- Custom CSS for Side-by-Side Portfolio Layout --- */
+
+/* 1. Style the main container for each portfolio item */
+.archive__item {
+  /* This "clearfix" is important to make sure the container properly wraps the floated image */
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+/* 2. Style the image container */
+.archive__item-teaser {
+  float: left; /* This moves the image to the left */
+  width: 250px; /* Adjust the width of your image here */
+  margin-right: 2em; /* Creates space between the image and the text */
+  margin-bottom: 1.5em; /* Adds space below the image on small screens */
+}
+
+/* 3. Make it responsive for mobile phones */
+@media screen and (max-width: 768px) {
+  .archive__item-teaser {
+    float: none; /* Disables the float on small screens */
+    width: 100%; /* Makes the image full-width */
+    margin-right: 0; /* Removes the side margin */
+  }
+}
