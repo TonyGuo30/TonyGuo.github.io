@@ -3,9 +3,10 @@ title: "Speech Recognition Trash Can"
 collection: portfolio
 permalink: /portfolio/speech-recognition-trash-can
 excerpt: >
-  Voice-activated smart bin with Mandarin command recognition (≈93% accuracy).
+  Voice-activated smart bin with Mandarin command recognition **(≈93% accuracy)**.
 header:
   teaser: "project3.jpg"
+  
 ---
 
 ![Speech Recognition Trash Can]({{ "/images/project3.jpg" | relative_url }})
