@@ -1,5 +1,10 @@
 /* --- Global Style Overhaul --- */
 
+/* 0. SCSS VARIABLES (tweak as needed) */
+$header-height:      80px;   // height of your fixed header/nav
+$back-to-top-size:   3rem;   // diameter of the button
+$back-to-top-offset: 2rem;   // distance from bottom/right edge
+
 /* 1. Global Font Change */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
 
@@ -18,7 +23,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.9em !important; /* <-- REDUCED SIZE for navigation links */
 }
 
-
 /* 3. Keep Previous Style Enhancements */
 
 /* Reset title size to something neutral, adjust if needed */
@@ -36,7 +40,12 @@ strong {
 hr {
   border: 0;
   height: 2px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.25),
+    rgba(0, 0, 0, 0)
+  );
 }
 
 /* Style the NEWS blockquotes */
@@ -48,4 +57,74 @@ blockquote {
   box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.03);
   font-style: italic;
   color: #555;
+}
+
+
+
+/* ——————————————————————————————————————————————————————————————————————————————
+   NEW FEATURES
+   1. Fluid / Responsive Typography
+   2. Smooth Scrolling & Anchor Offsets
+   3. “Back to Top” Button
+   —————————————————————————————————————————————————————————————————————————————— */
+
+/* 1. Fluid / Responsive Typography */
+html {
+  /* base font-size scales between 0.875rem and 1rem */
+  font-size: clamp(0.875rem, 1vw + 0.5rem, 1rem);
+}
+
+h1.page__title {
+  /* override if you want the title to scale fluidly */
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+}
+
+/* (Optional) Fluid size for paragraphs */
+p {
+  font-size: clamp(1rem, 1vw + 0.75rem, 1.125rem);
+}
+
+
+/* 2. Smooth Scrolling & Anchor Offsets */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Prevent fixed header from covering anchored sections */
+:target::before {
+  content: "";
+  display: block;
+  height: $header-height;
+  margin-top: -$header-height;
+  visibility: hidden;
+}
+
+
+/* 3. “Back to Top” Button */
+#back-to-top {
+  position: fixed;
+  bottom:  $back-to-top-offset;
+  right:   $back-to-top-offset;
+  width:   $back-to-top-size;
+  height:  $back-to-top-size;
+  line-height: $back-to-top-size;
+  text-align: center;
+
+  display: none;
+  border: none;
+  border-radius: 50%;
+  background-color: #0056b3;
+  color: white;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+  }
+}
+
+#back-to-top.show {
+  display: block;
 }
