@@ -79,11 +79,6 @@ h1.page__title {
   font-size: clamp(1.8rem, 4vw, 2.8rem);
 }
 
-/* (Optional) Fluid size for paragraphs */
-p {
-  font-size: clamp(1rem, 1vw + 0.75rem, 1.125rem);
-}
-
 
 /* 2. Smooth Scrolling & Anchor Offsets */
 html {
