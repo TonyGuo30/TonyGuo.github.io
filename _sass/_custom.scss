@@ -58,16 +58,3 @@ html {
   outline: 3px solid var(--color-secondary);
   outline-offset: 2px;
 }
-
-a {
-  color: var(--color-primary);
-  text-decoration: none;
-  transition: color var(--duration-standard) var(--ease-standard);
-}
-a:hover,
-a:focus {
-  color: var(--color-secondary);
-  outline: none;
-  text-decoration: underline;
-}
-
