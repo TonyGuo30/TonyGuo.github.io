@@ -1,60 +1,201 @@
-/* --- Global Style Overhaul --- */
+/* === 0. CSS Variables & Resets === */
+:root {
+  --color-primary: #0056b3;
+  --color-secondary: #8fd3f4;
+  --color-bg: #f8f9fa;
+  --color-text: #333;
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --ease-standard: cubic-bezier(.4,0,.2,1);
+  --duration-standard: 0.3s;
+}
 
-/* 1. Global Font Change */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === 1. Global Font Change === */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
 
 body {
-  font-family: 'Source Sans Pro', sans-serif; /* <-- NEW GLOBAL FONT */
-  line-height: 1.65; 
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.65;
+  background-color: var(--color-bg);
+  color: var(--color-text);
 }
 
-/* Ensure headings use the same font */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Source Sans Pro', sans-serif; 
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
-/* 2. Smaller Navigation Tabs */
+/* === 2. Smaller Navigation Tabs === */
 .masthead__menu-item {
-  font-size: 0.9em !important; /* <-- REDUCED SIZE for navigation links */
+  font-size: 0.9em !important;
 }
 
-
-/* 3. Keep Previous Style Enhancements */
-
-/* Reset title size to something neutral, adjust if needed */
+/* === 3. Previous Style Enhancements === */
 h1.page__title {
-  font-size: 2.2em; 
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+  font-size: 2.2em;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.05);
 }
 
-/* Style the bolded text */
 strong {
-  color: #0056b3; 
+  color: var(--color-primary);
 }
 
-/* Style the horizontal lines */
 hr {
   border: 0;
   height: 2px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));
+  background-image:
+    linear-gradient(
+      to right,
+      rgba(0,0,0,0),
+      rgba(0,0,0,0.25),
+      rgba(0,0,0,0)
+    );
 }
 
-/* Style the NEWS blockquotes */
 blockquote {
-  border-left: 5px solid #8fd3f4; 
+  border-left: 5px solid var(--color-secondary);
   background-color: #f8f9fa;
-  padding: 15px 20px;
+  padding: var(--space-md) var(--space-lg);
   border-radius: 8px;
-  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.03);
+  box-shadow: 3px 3px 15px rgba(0,0,0,0.03);
   font-style: italic;
   color: #555;
 }
 
-
+/* === 4. Accessibility & UX Enhancements === */
 html {
   scroll-behavior: smooth;
 }
+
 :focus {
   outline: 3px solid var(--color-secondary);
   outline-offset: 2px;
+}
+
+/* === Projects: Card Grid Variant === */
+.projects.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-lg);
+  margin: var(--space-lg) 0;
+}
+.projects.grid .project-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition:
+    transform var(--duration-standard) var(--ease-standard),
+    box-shadow var(--duration-standard) var(--ease-standard);
+}
+.projects.grid .project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+.projects.grid .project-card img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+.projects.grid .project-card .card-content {
+  padding: var(--space-md);
+}
+.projects.grid .project-card h3 {
+  margin-bottom: var(--space-sm);
+  font-size: 1.25rem;
+}
+.projects.grid .project-card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* === Projects: Hero Banner Variant === */
+.projects.hero {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+.projects.hero .project-hero {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.projects.hero .project-hero img {
+  width: 100%;
+  display: block;
+  transition: transform var(--duration-standard) var(--ease-standard);
+}
+.projects.hero .project-hero:hover img {
+  transform: scale(1.05);
+}
+.projects.hero .project-hero .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: var(--space-md);
+  background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+  color: #fff;
+}
+
+/* === Projects: Masonry Tiles Variant === */
+.projects.tiles {
+  column-count: 3;
+  column-gap: var(--space-md);
+}
+@media (max-width: 900px) {
+  .projects.tiles { column-count: 2; }
+}
+@media (max-width: 600px) {
+  .projects.tiles { column-count: 1; }
+}
+.projects.tiles .project-tile {
+  break-inside: avoid;
+  background: #fff;
+  margin-bottom: var(--space-md);
+  border-left: 5px solid var(--color-primary);
+  padding: var(--space-md);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  transition: box-shadow var(--duration-standard) var(--ease-standard);
+}
+.projects.tiles .project-tile:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+.projects.tiles .project-tile h3 {
+  margin-top: 0;
+}
+.projects.tiles .project-tile .read-more {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-decoration: none;
+  margin-top: var(--space-sm);
+  display: inline-block;
+}
+
+/* === Projects: Filterable Tabs UI === */
+.project-tabs {
+  display: flex;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+.project-tabs button {
+  background: none;
+  border: 2px solid var(--color-primary);
+  padding: var(--space-sm) var(--space-md);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color var(--duration-standard) var(--ease-standard);
+}
+.project-tabs button.active,
+.project-tabs button:hover {
+  background-color: var(--color-primary);
+  color: #fff;
 }
