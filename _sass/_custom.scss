@@ -80,13 +80,13 @@ html {
 }
 
 /* === Projects: Card Grid Variant === */
-.projects.grid {
+.portfolio.grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: var(--space-lg);
   margin: var(--space-lg) 0;
 }
-.projects.grid .project-card {
+.portfolio.grid .portfolio-card {
   background: #fff;
   border-radius: 8px;
   overflow: hidden;
@@ -95,47 +95,47 @@ html {
     transform var(--duration-standard) var(--ease-standard),
     box-shadow var(--duration-standard) var(--ease-standard);
 }
-.projects.grid .project-card:hover {
+.portfolio.grid .portfolio-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 24px rgba(0,0,0,0.1);
 }
-.projects.grid .project-card img {
+.portfolio.grid .portfolio-card img {
   width: 100%;
   display: block;
   object-fit: cover;
 }
-.projects.grid .project-card .card-content {
+.portfolio.grid .portfolio-card .portfolio-content {
   padding: var(--space-md);
 }
-.projects.grid .project-card h3 {
+.portfolio.grid .portfolio-card h3 {
   margin-bottom: var(--space-sm);
   font-size: 1.25rem;
 }
-.projects.grid .project-card p {
+.portfolio.grid .portfolio-card p {
   font-size: 0.9rem;
   color: #555;
 }
 
 /* === Projects: Hero Banner Variant === */
-.projects.hero {
+.portfolio.hero {
   display: flex;
   flex-direction: column;
   gap: var(--space-md);
 }
-.projects.hero .project-hero {
+.portfolio.hero .portfolio-hero {
   position: relative;
   overflow: hidden;
   border-radius: 8px;
 }
-.projects.hero .project-hero img {
+.portfolio.hero .portfolio-hero img {
   width: 100%;
   display: block;
   transition: transform var(--duration-standard) var(--ease-standard);
 }
-.projects.hero .project-hero:hover img {
+.portfolio.hero .portfolio-hero:hover img {
   transform: scale(1.05);
 }
-.projects.hero .project-hero .overlay {
+.portfolio.hero .portfolio-hero .overlay {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -146,17 +146,17 @@ html {
 }
 
 /* === Projects: Masonry Tiles Variant === */
-.projects.tiles {
+.portfolio.tiles {
   column-count: 3;
   column-gap: var(--space-md);
 }
 @media (max-width: 900px) {
-  .projects.tiles { column-count: 2; }
+  .portfolio.tiles { column-count: 2; }
 }
 @media (max-width: 600px) {
-  .projects.tiles { column-count: 1; }
+  .portfolio.tiles { column-count: 1; }
 }
-.projects.tiles .project-tile {
+.portfolio.tiles .portfolio-tile {
   break-inside: avoid;
   background: #fff;
   margin-bottom: var(--space-md);
@@ -165,13 +165,13 @@ html {
   box-shadow: 0 2px 8px rgba(0,0,0,0.03);
   transition: box-shadow var(--duration-standard) var(--ease-standard);
 }
-.projects.tiles .project-tile:hover {
+.portfolio.tiles .portfolio-tile:hover {
   box-shadow: 0 4px 16px rgba(0,0,0,0.08);
 }
-.projects.tiles .project-tile h3 {
+.portfolio.tiles .portfolio-tile h3 {
   margin-top: 0;
 }
-.projects.tiles .project-tile .read-more {
+.portfolio.tiles .portfolio-tile .read-more {
   font-size: 0.85rem;
   font-weight: 700;
   color: var(--color-primary);
@@ -181,12 +181,12 @@ html {
 }
 
 /* === Projects: Filterable Tabs UI === */
-.project-tabs {
+.portfolio-tabs {
   display: flex;
   gap: var(--space-sm);
   margin-bottom: var(--space-md);
 }
-.project-tabs button {
+.portfolio-tabs button {
   background: none;
   border: 2px solid var(--color-primary);
   padding: var(--space-sm) var(--space-md);
@@ -194,8 +194,8 @@ html {
   cursor: pointer;
   transition: background-color var(--duration-standard) var(--ease-standard);
 }
-.project-tabs button.active,
-.project-tabs button:hover {
+.portfolio-tabs button.active,
+.portfolio-tabs button:hover {
   background-color: var(--color-primary);
   color: #fff;
 }
