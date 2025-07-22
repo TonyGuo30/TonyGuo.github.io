@@ -1,34 +1,32 @@
-/* --- Advanced Styling for "About Me" Page (No Link Animation) --- */
+/* --- Advanced Styling with New Font and Adjusted Title --- */
 
-/* 1. Import a Modern Font from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Slab:wght@700&display=swap');
+/* 1. Import a new, classic Font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@700&display=swap');
 
 /* 2. Apply Upgraded Typography */
 body {
-  font-family: 'Inter', sans-serif; /* A clean, modern font for body text */
-  line-height: 1.7; /* Improves readability */
+  font-family: 'Lato', sans-serif; /* <-- NEW FONT: A very readable and popular choice */
+  line-height: 1.7; 
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto Slab', serif; /* A distinct, professional font for headings */
-  letter-spacing: -0.5px; /* Tightens up letter spacing for a sharper look */
+  font-family: 'Merriweather', serif; /* <-- NEW FONT: A classic and elegant serif for headings */
 }
 
-/* Make the main title pop */
+/* Make the main title pop, but not too much */
 h1.page__title {
-  font-size: 3.5em; /* A bit larger for more impact */
+  font-size: 2.5em; /* <-- ADJUSTED SIZE: Smaller than before, but still impactful */
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 /* Style the bolded text to stand out more */
 strong {
-  color: #0056b3; /* A slightly different color to draw attention */
+  color: #0056b3; 
 }
-
 
 /* 3. Add "Fancy" Features & Interactive Elements */
 
-/* Keep link transitions smooth, but remove background animation */
+/* Keep link transitions smooth */
 a {
   transition: all 0.2s ease-in-out;
 }
@@ -42,11 +40,11 @@ hr {
 
 /* Style the NEWS blockquotes */
 blockquote {
-  border-left: 5px solid #8fd3f4; /* A colored border */
-  background-color: #f8f9fa; /* A subtle background */
+  border-left: 5px solid #8fd3f4; 
+  background-color: #f8f9fa;
   padding: 15px 20px;
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.03); /* A very subtle shadow */
+  border-radius: 8px;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.03);
   font-style: italic;
   color: #555;
 }
