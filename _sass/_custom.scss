@@ -49,26 +49,3 @@ blockquote {
   font-style: italic;
   color: #555;
 }
-
-/* 1. Smooth Scrolling for Anchor Links */
-html {
-  scroll-behavior: smooth;
-}
-
-/* 2. Link Hover Enhancements */
-a {
-  transition: color 0.3s ease;
-  color: #007acc;
-}
-a:hover {
-  color: #0056b3;
-  text-decoration: underline;
-}
-
-/* 3. Subtle Elevation for Page Content Area */
-.page__content {
-  background: #fff;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-}
