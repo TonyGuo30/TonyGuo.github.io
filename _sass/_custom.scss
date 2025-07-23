@@ -58,3 +58,39 @@ html {
   outline: 3px solid var(--color-secondary);
   outline-offset: 2px;
 }
+
+/* -------------------------------------------------
+   Fancy publication cards (only affect .pub-* nodes)
+   -------------------------------------------------*/
+
+.pub-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.pub-thumb img {
+  max-width: 140px;
+  border-radius: 6px;
+}
+.pub-body {
+  flex: 1;
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+.pub-badge {
+  background: #eee;
+  padding: 2px 6px;
+  margin-right: .5rem;
+  border-radius: 4px;
+  font-size: .75rem;
+  font-weight: 600;
+}
+.pub-links a {
+  margin-right: .6rem;
+  font-size: .85rem;
+}
+.pub-abstract,
+.pub-bibtex { margin-top: .5rem; }
+.pub-annotation,
+.pub-extra { margin-top: .75rem; font-size: .9rem; color:#555; }
+.pub-metrics { margin-top: .5rem; }
