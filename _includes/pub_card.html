@@ -1,0 +1,67 @@
+{%- assign p = include.page | default: page -%}
+{%- assign year = p.year | default: p.date | date: "%Y" -%}
+{%- assign authors = p.authors | default: p.author | split: "," -%}
+{%- capture author_str -%}
+  {%- for a in authors -%}
+    {{ a | strip }}{%- unless forloop.last -%}, {% endunless -%}
+  {%- endfor -%}
+{%- endcapture -%}
+
+<div class="pub-item">
+  {% if p.preview %}
+    <div class="pub-thumb">
+      <img src="{{ p.preview | relative_url }}" alt="preview of {{ p.title }}">
+    </div>
+  {% endif %}
+
+  <div class="pub-body">
+    {% if p.abbr %}<span class="pub-badge">{{ p.abbr }}</span>{% endif %}
+    <span class="pub-authors">{{ author_str }}.</span>
+    <span class="pub-year"> {{ year }}.</span>
+    <span class="pub-title"><i>{{ p.title }}</i>.</span>
+    {% if p.venue %} <span class="pub-venue"> {{ p.venue }}.</span>{% endif %}
+
+    <div class="pub-links">
+      {% if p.paperurl %}<a href="{{ p.paperurl | relative_url }}">PDF</a>{% endif %}
+      {% if p.slidesurl %}<a href="{{ p.slidesurl | relative_url }}">Slides</a>{% endif %}
+      {% if p.bibtexurl %}<a href="{{ p.bibtexurl | relative_url }}">BibTeX</a>{% endif %}
+      {% if p.doi %}<a href="https://doi.org/{{ p.doi }}">DOI</a>{% endif %}
+      {% if p.html %}<a href="{{ p.html | relative_url }}">Project Page</a>{% endif %}
+      {% if p.video %}<a href="{{ p.video }}" target="_blank">Video</a>{% endif %}
+    </div>
+
+    {% if p.abstract %}
+      <details class="pub-abstract">
+        <summary>Abstract</summary>
+        <div>{{ p.abstract | markdownify }}</div>
+      </details>
+    {% endif %}
+
+    {% if p.additional_info %}
+      <div class="pub-extra">{{ p.additional_info | markdownify }}</div>
+    {% endif %}
+
+    {% if p.annotation %}
+      <div class="pub-annotation">{{ p.annotation | markdownify }}</div>
+    {% endif %}
+
+    {% if p.altmetric %}
+      <div class="pub-metrics">
+        <span class="altmetric-embed" data-altmetric-id="{{ p.altmetric }}"></span>
+      </div>
+    {% endif %}
+    {% if p.dimensions and p.doi %}
+      <div class="pub-metrics">
+        <span class="__dimensions_badge_embed__" data-doi="{{ p.doi }}"></span>
+      </div>
+    {% endif %}
+
+    {% if p.bibtex_show and p.bibtex %}
+      <details class="pub-bibtex">
+        <summary>BibTeX</summary>
+        <pre><code>{{ p.bibtex | escape }}</code></pre>
+      </details>
+    {% endif %}
+  </div>
+</div>
+<hr>
