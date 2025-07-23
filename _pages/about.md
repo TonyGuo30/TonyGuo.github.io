@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am **Tony** (Haoze) Guo, currently pursuing my Bachelor of Science in **Computer Engineering** and **Computer Science** with **honor** at the **University of Wisconsin–Madison**, expecting to graduate in May 2027.
+I am **Tony** (Haoze) Guo, currently pursuing my Bachelor of Science in **Computer Engineering** and **Computer Science** with **honor** at the **[University of Wisconsin–Madison](https://www.cs.wisc.edu/)**, expecting to graduate in May 2027.
 
 My primary research interests include **Human-Computer Interaction (HCI)**, **Natural Language Processing (NLP)**, **Social Computing**, and **AI-powered interactive systems**. I'm particularly passionate about creating intuitive, scalable, and user-centered interactive technologies.
 
