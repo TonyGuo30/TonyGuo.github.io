@@ -28,6 +28,5 @@ abstract: >
   simulation system that leverages LLM agents in spatial and temporal
   environments …
 altmetric: 248277                              # if you want the badge
-additional_info: ". *More details* on GitHub."
 selected: true                                # use for filtering if desired
 ---
