@@ -47,11 +47,9 @@ Courses & Skills
 
 ## Selected Publications
 
+<div class="pub-list">
 {% assign sel = site.publications | where: "selected", true | sort: "date" | reverse %}
 {% for pub in sel %}
-- **{{ pub.title }}**  
-  {{ pub.authors | replace: "Haoze Guo", "<u>Haoze Guo</u>" }}  
-  _{{ pub.abbr }}_, {{ pub.date | date: "%Y" }}.  
-  [Paper]({{ pub.paperurl | relative_url }}) · [Page]({{ pub.permalink | relative_url }})
+  {% include pub_card.html page=pub %}
 {% endfor %}
-
+</div>
