@@ -46,10 +46,45 @@ Courses & Skills
 ---
 
 ## Selected Publications
+{% assign you = "Haoze Guo" %}
+{% assign sel = site.publications | where: "selected", true | sort: "date" | reverse %}
 
 <div class="pub-list">
-{% assign sel = site.publications | where: "selected", true | sort: "date" | reverse %}
-{% for pub in sel %}
-  {% include pub_card.html page=pub %}
+{% for p in sel %}
+  {%- assign authors = p.authors | split: "," -%}
+  {%- assign last_author = authors | last -%}
+  {%- capture trimmed_authors -%}
+    {%- for a in authors -%}
+      {%- assign nm = a | strip -%}
+      {%- if nm contains you -%}
+        {{ nm }}{%- unless last_author contains you -%}, …{%- endunless -%}
+        {%- break -%}
+      {%- else -%}
+        {{ nm }},
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endcapture -%}
+
+  <div class="pub-item">
+    {% if p.preview %}
+      <div class="pub-thumb">
+        <img src="{{ p.preview | relative_url }}" alt="preview of {{ p.title }}">
+      </div>
+    {% endif %}
+
+    <div class="pub-body">
+      {% if p.abbr %}<span class="pub-badge">{{ p.abbr }}</span>{% endif %}
+      <span class="pub-authors">{{ trimmed_authors | strip }}.</span>
+      <span class="pub-year"> {{ p.date | date: "%Y" }}.</span>
+      <span class="pub-title"><i>{{ p.title }}</i>.</span>
+      {% if p.venue %}<span class="pub-venue"> {{ p.venue }}.</span>{% endif %}
+
+      <div class="pub-links">
+        {% if p.paperurl %}<a href="{{ p.paperurl | relative_url }}">PDF</a>{% endif %}
+      </div>
+      {# no abstract/bibtex/etc here #}
+    </div>
+  </div>
+  <hr>
 {% endfor %}
 </div>
