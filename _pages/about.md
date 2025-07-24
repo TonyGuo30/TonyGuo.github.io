@@ -47,6 +47,7 @@ Courses & Skills
 
 ## Selected Publications
 {% assign you = "Haoze Guo" %}
+{% capture you_tag %}<u>{{ you }}</u>{% endcapture %}  {# NEW #}
 {% assign sel = site.publications | where: "selected", true | sort: "date" | reverse %}
 
 <div class="pub-list">
@@ -57,7 +58,7 @@ Courses & Skills
     {%- for a in authors -%}
       {%- assign nm = a | strip -%}
       {%- if nm contains you -%}
-        {{ nm }}{%- unless last_author contains you -%}, …{%- endunless -%}
+        {{ nm }}{%- unless last_author contains you -%}, …]{%- endunless -%}
         {%- break -%}
       {%- else -%}
         {{ nm }},
@@ -74,7 +75,9 @@ Courses & Skills
 
     <div class="pub-body">
       {% if p.abbr %}<span class="pub-badge">{{ p.abbr }}</span>{% endif %}
-      <span class="pub-authors">{{ trimmed_authors | strip }}.</span>
+      <span class="pub-authors">
+        {{ trimmed_authors | strip | replace: you, you_tag }}.
+      </span>  {# CHANGED #}
       <span class="pub-year"> {{ p.date | date: "%Y" }}.</span>
       <span class="pub-title"><i>{{ p.title }}</i>.</span>
       {% if p.venue %}<span class="pub-venue"> {{ p.venue }}.</span>{% endif %}
@@ -82,7 +85,6 @@ Courses & Skills
       <div class="pub-links">
         {% if p.paperurl %}<a href="{{ p.paperurl | relative_url }}">PDF</a>{% endif %}
       </div>
-      {# no abstract/bibtex/etc here #}
     </div>
   </div>
   <hr>
