@@ -47,7 +47,7 @@ Courses & Skills
 
 ## Selected Publications
 {% assign you = "Haoze Guo" %}
-{% capture you_tag %}<mark>{{ you }}</mark>{% endcapture %}
+{% capture you_tag %}<strong>{{ you }}</strong>{% endcapture %}
 {% assign sel = site.publications | where: "selected", true | sort: "date" | reverse %}
 
 <div class="pub-list">
