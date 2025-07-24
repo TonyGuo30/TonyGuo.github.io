@@ -47,7 +47,7 @@ Courses & Skills
 
 ## Selected Publications
 {% assign you = "Haoze Guo" %}
-{% capture you_tag %}<u>{{ you }}</u>{% endcapture %}  {# NEW #}
+{% capture you_tag %}<mark>{{ you }}</mark>{% endcapture %}  {# NEW #}
 {% assign sel = site.publications | where: "selected", true | sort: "date" | reverse %}
 
 <div class="pub-list">
@@ -77,7 +77,7 @@ Courses & Skills
       {% if p.abbr %}<span class="pub-badge">{{ p.abbr }}</span>{% endif %}
       <span class="pub-authors">
         {{ trimmed_authors | strip | replace: you, you_tag }}.
-      </span>  {# CHANGED #}
+      </span>
       <span class="pub-year"> {{ p.date | date: "%Y" }}.</span>
       <span class="pub-title"><i>{{ p.title }}</i>.</span>
       {% if p.venue %}<span class="pub-venue"> {{ p.venue }}.</span>{% endif %}
