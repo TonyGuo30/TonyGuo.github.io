@@ -41,15 +41,29 @@ hr {
 
 /* Style the NEWS blockquotes */
 blockquote {
-  border-left: 5px solid #8fd3f4; 
+  position: relative;
+  border-left: 5px solid #8fd3f4;
   background-color: #f8f9fa;
   padding: 15px 20px;
   border-radius: 8px;
   box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.03);
   font-style: italic;
   color: #555;
+  line-height: 1.45;
+  overflow: hidden;
+  margin: 1.25em 0;
 }
 
+/* Remove unintended internal vertical gaps from default margins */
+blockquote > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* If you want spacing between multiple paragraphs inside */
+blockquote p + p {
+  margin-top: 0.6em;
+}
 
 html {
   scroll-behavior: smooth;
