@@ -15,7 +15,7 @@ Currently, I am leading frontend optimization efforts for **VirT-Lab**, an AI-po
 
 Feel free to explore my website for more details on my research projects, publications, and technical background!
 
-> 📢 I am actively looking for research opportunities in HCI related field! And also planning to PHD or Master degree!
+> 📢 **I am actively looking for research opportunities in HCI related field! And also planning to PHD or Master degree!**
 
 ---
 
