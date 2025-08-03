@@ -164,3 +164,17 @@ html {
 .pub-annotation,
 .pub-extra { margin-top: .75rem; font-size: .9rem; color:#555; }
 .pub-metrics { margin-top: .5rem; }
+
+/* Kill the extra Gap in the quote */
+
+.page__content blockquote p,
+.post-content   blockquote p,
+blockquote p {
+  margin: 0;                /* wipe out the 1.3 em bottom margin */
+}
+
+.page__content blockquote p + p,
+.post-content   blockquote p + p,
+blockquote p + p {
+  margin-top: 0.6em;        /* modest spacing between paragraphs */
+}
