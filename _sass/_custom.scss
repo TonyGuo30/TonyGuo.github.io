@@ -52,12 +52,29 @@ blockquote {
   line-height: 1.45;
   overflow: hidden;
   margin: 1.25em 0;
+  display: flow-root;
+  white-space: normal;
+}
+
+/* Kill any raw <br> injected by markdown that’s creating a ghost gap */
+blockquote > br {
+  display: none;
 }
 
 /* Remove unintended internal vertical gaps from default margins */
 blockquote > * {
   margin-top: 0;
   margin-bottom: 0;
+}
+blockquote > p:empty {
+  display: none;
+}
+
+blockquote::after {
+  content: "";
+  display: block;
+  height: 0;
+  visibility: hidden;
 }
 
 /* If you want spacing between multiple paragraphs inside */
