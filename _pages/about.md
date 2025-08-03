@@ -15,33 +15,18 @@ Currently, I am leading frontend optimization efforts for **VirT-Lab**, an AI-po
 
 Feel free to explore my website for more details on my research projects, publications, and technical background!
 
+> 📢 I am actively looking for research opportunities in HCI related field! And also planning to PHD or Master degree!
+
 ---
 
 NEWS
 ======
-- *2025-07-11*
-> We successfully submitted our paper to **UIST Demo '25** 🎉
+- *2025-08-02*
+> Our paper was conditionally accepted by **UIST Demo '25** 🎉
 - *2025-06-01*
 > Join the RINGZ-Lab as an iSURE student advised by **Prof. Diego Gómez-Zará** 🎉
 - *2023-09-06*
 > Begun my undergraduate study at **University of Wisconsin - Madison** 🎉
-
----
-
-Courses & Skills
-======
-
-**Core Coursework (Completed / In Progress)**
-
-- *CS / CE Foundations:* Data Structure and Analysis; Algorithms; Systems Programming; Software Engineering; Software Design; Computer Organization & Architecture; Artificial Intelligence; Database Management; Computer Vision (INP); Robotic System (INP); Mobile App Dev (INP)
-
-- *Math & Theory:* Probability & Statistics; Discrete Math; Linear Algebra; Multivariable Calc
-
-**Programming Languages (Proficient):** Python · JavaScript/TypeScript · Java · C/C++ · SQL · Go · MATLAB · R · C# 
-
-**Frameworks / Libraries:** React · Node.js / Express · PyTorch · Vue.js
-
-**Developer & Cloud Tools:** Git · Linux · AWS(Lambda) · Google Cloud Platform · Docker · pyCharm · VS Code · Unity Hub
 
 ---
 
