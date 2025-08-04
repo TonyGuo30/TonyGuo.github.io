@@ -9,7 +9,7 @@ redirect_from:
 
 I am **Tony** (Haoze) Guo, currently pursuing my Bachelor of Science in **Computer Engineering** and **Computer Science** with **honor** at the **[University of Wisconsin–Madison](https://www.cs.wisc.edu/)**, expecting to graduate in May 2027.
 
-My primary research interests include **Human-Computer Interaction (HCI)**, **Natural Language Processing (NLP)**, **Social Computing**, and **AI-powered interactive systems**. I'm particularly passionate about creating intuitive, scalable, and user-centered interactive technologies.
+My primary research interests include **Human-Computer Interaction (HCI)**, *Natural Language Processing (NLP)*, *Computational Social Science*, and **AI-powered interactive systems**. I'm particularly passionate about creating intuitive, scalable, and user-centered interactive technologies.
 
 Currently, I am leading frontend optimization efforts for **VirT-Lab**, an AI-powered multi-agent simulation platform, supervised by **[Prof. Diego Gómez-Zará](https://engineering.nd.edu/faculty/diego-gomez-zara/)**. My role involves enhancing real-time interactions and visualization capabilities to support effective human-AI collaboration.
 
