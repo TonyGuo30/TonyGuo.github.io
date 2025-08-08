@@ -20,7 +20,7 @@ permalink: /publication/virt-lab-2025-uist-demo
 
 # — card fields — #
 venue: "ACM Symposium on User Interface Software and Technology (UIST) 2025 Demo"
-abbr: "UIST '25 Demo"           # badge
+abbr: "UIST '25"           # badge
 preview: /images/virtlab-thumb.gif
 paperurl: /files/2025_UIST_Demo__VirtLab_Project.pdf
 abstract: >
