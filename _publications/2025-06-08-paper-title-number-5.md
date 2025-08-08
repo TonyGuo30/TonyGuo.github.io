@@ -33,7 +33,7 @@ selected: true
 ---
 
 <div class="pub-hero">
-  <a class="pub-figure-link" href="{{ page.paperurl }}" target="_blank" rel="noopener">
-    <img src="{{ page.preview }}" alt="VirT-Lab demo thumbnail" class="pub-figure" loading="lazy">
+  <a href="{{ page.paperurl }}" target="_blank" rel="noopener">
+    <img class="sig" src="{{ page.preview }}" alt="VirT-Lab demo thumbnail" loading="lazy">
   </a>
 </div>
