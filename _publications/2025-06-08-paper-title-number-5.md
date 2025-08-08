@@ -20,9 +20,9 @@ permalink: /publication/virt-lab-2025-uist-demo
 
 # — card fields — #
 venue: "ACM Symposium on User Interface Software and Technology (UIST) 2025 Demo"
-abbr: "UIST '25"           # badge
+abbr: "UIST '25"
 preview: /images/virtlab-thumb.gif
-paperurl: "https://arxiv.org/abs/2508.04634"
+paperurl: "https://arxiv.org/pdf/2508.04634v1"
 abstract: >
   We introduce **VirT-Lab**, a user-friendly, customizable, multi-agent
   simulation system that leverages LLM agents in spatial and temporal
