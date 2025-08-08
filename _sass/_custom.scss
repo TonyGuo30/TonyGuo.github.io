@@ -178,3 +178,44 @@ blockquote p {
 blockquote p + p {
   margin-top: 0.6em;        /* modest spacing between paragraphs */
 }
+
+/* -------------------------------------------------
+   Hover-pop publication figure (clickable to paper)
+   -------------------------------------------------*/
+
+.pub-hero { margin: 1rem 0 1.25rem; }
+
+.pub-figure-link {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  line-height: 0;           /* removes stray gaps around image */
+  border-radius: 14px;      /* matches image radius for focus ring */
+}
+
+.pub-figure {
+  display: block;
+  max-width: min(100%, 560px); /* scale responsively, cap size */
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.08);
+  transition: transform .18s ease, box-shadow .18s ease;
+  will-change: transform;
+}
+
+.pub-figure-link:hover .pub-figure,
+.pub-figure-link:focus .pub-figure,
+.pub-figure-link:focus-visible .pub-figure {
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 12px 30px rgba(0,0,0,.2);
+}
+
+.pub-figure-link:focus,
+.pub-figure-link:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pub-figure { transition: none; }
+}
