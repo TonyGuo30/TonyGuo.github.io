@@ -1,0 +1,32 @@
+{%- comment -%}
+Custom publication card with thumbnail that pops on hover and links to paper.
+Falls back to post.url if paperurl not set; ignores if no preview provided.
+{%- endcomment -%}
+
+<article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+  <div class="pub-card">
+    {%- if post.preview -%}
+      <a class="pub-card__thumb" href="{{ post.paperurl | default: post.link | default: post.url | relative_url }}" target="_blank" rel="noopener">
+        <img src="{{ post.preview | relative_url }}" alt="{{ post.title | escape }}" loading="lazy">
+      </a>
+    {%- endif -%}
+
+    <div class="pub-card__body">
+      <h2 class="archive__item-title" itemprop="headline">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </h2>
+      {%- if post.venue -%}
+        <p class="pub-card__venue"><span class="pub-badge">{{ post.abbr | default: post.venue }}</span> {{ post.venue }}</p>
+      {%- endif -%}
+      {%- if post.excerpt -%}
+        <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html }}</p>
+      {%- endif -%}
+
+      <p class="pub-links">
+        {%- if post.paperurl -%}<a href="{{ post.paperurl }}" target="_blank" rel="noopener">Paper</a>{%- endif -%}
+        {%- if post.DOI -%}<a href="https://doi.org/{{ post.DOI }}" target="_blank" rel="noopener">DOI</a>{%- endif -%}
+        {%- if post.citation -%}<a href="{{ post.url | relative_url }}">Details</a>{%- endif -%}
+      </p>
+    </div>
+  </div>
+</article>
