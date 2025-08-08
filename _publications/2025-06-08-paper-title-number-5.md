@@ -34,9 +34,7 @@ selected: true
 
 <div class="pub-hero">
   <a href="{{ page.paperurl }}" target="_blank" rel="noopener">
-    <img class="sig" src="{{ page.preview }}" alt="VirT-Lab demo thumbnail" loading="lazy">
+    <img class="sig" src="{{ page.preview }}" alt="virtlab-thumb" loading="lazy">
   </a>
 </div>
-<style>
-  .page__content .pub-hero a:hover img { transform: scale(1.04); box-shadow: 0 12px 30px rgba(0,0,0,.2); }
-</style>
+
