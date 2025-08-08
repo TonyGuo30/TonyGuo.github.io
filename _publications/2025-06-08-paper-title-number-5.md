@@ -34,7 +34,8 @@ selected: true
 
 <div class="pub-hero">
   <a href="{{ page.paperurl }}" target="_blank" rel="noopener">
-    <img class="sig" src="{{ page.preview }}" alt="virtlab-thumb" loading="lazy">
+    <img src="{{ page.preview | relative_url }}" alt="VirT-Lab demo thumbnail" loading="lazy">
   </a>
 </div>
+
 
