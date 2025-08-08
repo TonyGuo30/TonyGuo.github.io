@@ -22,11 +22,17 @@ permalink: /publication/virt-lab-2025-uist-demo
 venue: "ACM Symposium on User Interface Software and Technology (UIST) 2025 Demo"
 abbr: "UIST '25"           # badge
 preview: /images/virtlab-thumb.gif
-paperurl: "https://arxiv.org/html/2508.04634v1"
+paperurl: "https://arxiv.org/abs/2508.04634"
 abstract: >
   We introduce **VirT-Lab**, a user-friendly, customizable, multi-agent
   simulation system that leverages LLM agents in spatial and temporal
   environments …
-altmetric: 248277                              # if you want the badge
-selected: true                                # use for filtering if desired
+altmetric: 248277
+selected: true
 ---
+
+<div class="pub-hero">
+  <a class="pub-figure-link" href="{{ page.paperurl }}" target="_blank" rel="noopener">
+    <img src="{{ page.preview }}" alt="VirT-Lab demo thumbnail" class="pub-figure" loading="lazy">
+  </a>
+</div>
