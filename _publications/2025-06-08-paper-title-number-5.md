@@ -1,5 +1,6 @@
 ---
 title: "VirT-Lab: An AI-Powered System for Flexible, Customizable, and Large-Scale Team Simulations"
+layout: single
 authors:
   - Mohammed Almutairi
   - Charles Chiang
