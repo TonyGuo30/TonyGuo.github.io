@@ -178,3 +178,27 @@ blockquote p {
 blockquote p + p {
   margin-top: 0.6em;        /* modest spacing between paragraphs */
 }
+
+
+/* Make publication thumbnails pop on hover */
+.pub-thumb-link {
+  display: inline-block;
+  line-height: 0;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.pub-thumb-link img {
+  display: block;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.08);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.pub-thumb-link:hover img,
+.pub-thumb-link:focus img {
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 12px 30px rgba(0,0,0,.2);
+}
+.pub-thumb-link:focus { outline: 2px solid currentColor; outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) {
+  .pub-thumb-link img { transition: none; }
+}
