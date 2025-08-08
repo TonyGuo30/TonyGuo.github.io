@@ -9,10 +9,20 @@
 
 <div class="pub-item">
   {% if p.preview %}
+    {% assign rawhref = p.paperurl | default: p.link | default: p.url %}
+    {% if rawhref contains '://' %}
+      {% assign href = rawhref %}
+    {% else %}
+      {% assign href = rawhref | relative_url %}
+    {% endif %}
+  
     <div class="pub-thumb">
-      <img src="{{ p.preview | relative_url }}" alt="preview of {{ p.title }}">
+      <a class="pub-thumb-link" href="{{ href }}" target="_blank" rel="noopener" aria-label="Open {{ p.title }}">
+        <img src="{{ p.preview | relative_url }}" alt="preview of {{ p.title }}">
+      </a>
     </div>
   {% endif %}
+
 
   <div class="pub-body">
     {% if p.abbr %}<span class="pub-badge">{{ p.abbr }}</span>{% endif %}
