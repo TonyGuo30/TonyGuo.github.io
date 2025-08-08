@@ -9,7 +9,7 @@
 
 <div class="pub-item">
   {% if p.preview %}
-    {% assign rawhref = p.paperurl | default: p.link | default: p.url %}
+    {% assign rawhref = p.figlink | default: p.paperurl | default: p.link | default: p.url %}
     {% if rawhref contains '://' %}
       {% assign href = rawhref %}
     {% else %}
