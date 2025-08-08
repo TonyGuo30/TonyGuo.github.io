@@ -24,6 +24,7 @@ venue: "ACM Symposium on User Interface Software and Technology (UIST) 2025 Demo
 abbr: "UIST '25"
 preview: /images/virtlab-thumb.gif
 paperurl: "https://arxiv.org/pdf/2508.04634v1"
+figlink: "https://arxiv.org/abs/2508.04634"
 abstract: >
   We introduce **VirT-Lab**, a user-friendly, customizable, multi-agent
   simulation system that leverages LLM agents in spatial and temporal
@@ -31,3 +32,19 @@ abstract: >
 altmetric: 248277
 selected: true
 ---
+
+<!-- Minimal inline style so the hero image pops even if custom.scss isn't loaded -->
+<style>
+  .pub-hero{margin:1rem 0 1.25rem}
+  .pub-thumb-link{display:inline-block;line-height:0;border-radius:12px;text-decoration:none}
+  .pub-thumb-link img{display:block;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,.08);transition:transform .18s ease,box-shadow .18s ease}
+  .pub-thumb-link:hover img,.pub-thumb-link:focus img{transform:translateY(-2px) scale(1.04);box-shadow:0 12px 30px rgba(0,0,0,.2)}
+  .pub-thumb-link:focus{outline:2px solid currentColor;outline-offset:3px}
+</style>
+
+<!-- Big hero image on the individual publication page -->
+<div class="pub-hero">
+  <a class="pub-thumb-link" href="{{ page.figlink | default: page.paperurl }}" target="_blank" rel="noopener">
+    <img src="{{ page.preview | relative_url }}" alt="VirT-Lab demo thumbnail" loading="lazy">
+  </a>
+</div>
