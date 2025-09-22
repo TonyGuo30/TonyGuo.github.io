@@ -22,6 +22,8 @@ Feel free to explore my website for more details on my research projects, public
 
 NEWS
 ======
+- *2025-09-18*
+> I will join the **IUI '26 PC** as a reviwer!
 - *2025-08-02*
 > Our paper was conditionally accepted by **UIST Demo '25** 🎉
 - *2025-06-01*
