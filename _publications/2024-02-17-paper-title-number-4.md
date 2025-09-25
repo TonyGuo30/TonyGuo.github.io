@@ -1,12 +1,39 @@
 ---
-title: "Paper Title Number 4"
-# collection: publications
-# category: conferences
-# permalink: /publication/2024-02-17-paper-title-number-4
-# excerpt: 'This paper is about fixing template issue #693.'
-# date: 2024-02-17
-# venue: 'GitHub Journal of Bugs'
-# paperurl: 'http://academicpages.github.io/files/paper3.pdf'
-# citation: 'Your Name, You. (2024). &quot;Paper Title Number 3.&quot; <i>GitHub Journal of Bugs</i>. 1(3).'
-# ---
+layout: single
+title: "Temporal Drift in Privacy Recall: Users Misremember From Verbatim Loss to Gist-Based Overexposure Over Time"
+authors:
+  - Haoze Guo
+  - Ziqi Wei
+date: 2025-09-21
+collection: publications
+category: conferences
+permalink: /publication/privacy-recall
 
+# — card fields — #
+venue: "ArXiv"
+abbr: "Preprint"
+preview: /images/privacy_recall.png
+paperurl: "https://arxiv.org/pdf/2509.16962v1"
+figlink: "https://arxiv.org/abs/2509.16962"
+abstract: >
+  We use the term temporal drift in privacy recall to refer to a consistent 
+  difference between the audience for a post the poster created and the 
+  audience they recall at reuse time as time passes …
+altmetric: 248277
+---
+
+<!-- Minimal inline style so the hero image pops even if custom.scss isn't loaded -->
+<style>
+  .pub-hero{margin:1rem 0 1.25rem}
+  .pub-thumb-link{display:inline-block;line-height:0;border-radius:12px;text-decoration:none}
+  .pub-thumb-link img{display:block;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,.08);transition:transform .18s ease,box-shadow .18s ease}
+  .pub-thumb-link:hover img,.pub-thumb-link:focus img{transform:translateY(-2px) scale(1.04);box-shadow:0 12px 30px rgba(0,0,0,.2)}
+  .pub-thumb-link:focus{outline:2px solid currentColor;outline-offset:3px}
+</style>
+
+<!-- Big hero image on the individual publication page -->
+<div class="pub-hero">
+  <a class="pub-thumb-link" href="{{ page.figlink | default: page.paperurl }}" target="_blank" rel="noopener">
+    <img src="{{ page.preview | relative_url }}" alt="privacy-recall" loading="lazy">
+  </a>
+</div>
