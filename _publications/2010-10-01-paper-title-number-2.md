@@ -32,6 +32,7 @@ abstract: >
   simulations of team dynamics with LLM-based agents situated in 2D spatial environments …
 altmetric: 248277
 selected: true
+
 ---
 
 <!-- Minimal inline style so the hero image pops even if custom.scss isn't loaded -->
