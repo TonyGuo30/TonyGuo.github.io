@@ -17,22 +17,20 @@ authors:
 date: 2025-10-19
 collection: publications
 category: conferences
-permalink: /publication/simulating-teams
-
+permalink: /publication/arxiv-preprint
 
 # — card fields — #
 venue: "ArXiv"
-abbr: "Preprint
+abbr: "Preprint"
 preview: /images/sampleteaser7.pdf
 paperurl: "https://arxiv.org/pdf/2510.08242"
 figlink: "https://arxiv.org/abs/2510.08242"
 abstract: >
-  Enabling users to create their own simulations offers a powerful way to study team dynamics and performance.
-  We introduce VirTLab, a system that allows researchers and practitioners to design interactive, customizable 
-  simulations of team dynamics with LLM-based agents situated in 2D spatial environments …
+  We introduce **VirT-Lab**, a user-friendly, customizable, multi-agent
+  simulation system that leverages LLM agents in spatial and temporal
+  environments …
 altmetric: 248277
 selected: true
-
 ---
 
 <!-- Minimal inline style so the hero image pops even if custom.scss isn't loaded -->
