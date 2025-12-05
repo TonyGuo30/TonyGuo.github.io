@@ -22,7 +22,7 @@ permalink: /publication/arxiv-preprint
 # — card fields — #
 venue: "ArXiv"
 abbr: "Preprint"
-preview: /images/sampleteaser7.pdf
+preview: /images/sampleteaser7.png
 paperurl: "https://arxiv.org/pdf/2510.08242"
 figlink: "https://arxiv.org/abs/2510.08242"
 abstract: >
