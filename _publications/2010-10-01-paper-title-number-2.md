@@ -26,9 +26,9 @@ preview: /images/sampleteaser7.pdf
 paperurl: "https://arxiv.org/pdf/2510.08242"
 figlink: "https://arxiv.org/abs/2510.08242"
 abstract: >
-  We introduce **VirT-Lab**, a user-friendly, customizable, multi-agent
-  simulation system that leverages LLM agents in spatial and temporal
-  environments …
+  Enabling users to create their own simulations offers a powerful way to study team dynamics and performance. 
+  We introduce VirTLab, a system that allows researchers and practitioners to design interactive, customizable 
+  simulations of team dynamics with LLM-based agents situated in 2D spatial environments…
 altmetric: 248277
 selected: true
 ---
