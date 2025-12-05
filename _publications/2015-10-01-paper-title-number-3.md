@@ -18,7 +18,7 @@ collection: publications
 category: conferences
 
 # — card fields — #
-venue: "ACM Symposium on User Interface Software and Technology (UIST) 2025 Demo"
+venue: "Neural Information Processing Systems (NeurIPS 2025) Workshop"
 abbr: "NeurIPS 2025"
 preview: /images/virtlab-thumb.gif
 paperurl: "https://openreview.net/pdf?id=BX1BnepTZO"
