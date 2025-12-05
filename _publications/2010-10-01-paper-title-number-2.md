@@ -17,6 +17,7 @@ authors:
 date: 2025-10-19
 collection: publications
 category: conferences
+permalink: /publication/simulating-teams
 
 
 # — card fields — #
