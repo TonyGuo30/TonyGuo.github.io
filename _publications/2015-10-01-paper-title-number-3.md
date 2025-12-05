@@ -1,14 +1,47 @@
 ---
-title: "Paper Title Number 3"
+layout: single
+title: "Enabling User-Created Multi-Agent Simulations: Interactive and Customizable 2D Environments to Study Team Dynamics with LLM Agents"
+authors:
+  - Mohammed Almutairi
+  - Charles Chiang
+  - Haoze Guo
+  - Matthew Belcher
+  - Nandini Banerjee
+  - Maria Milkowski
+  - Daniel Nguyen
+  - Tim Weninger
+  - Michael Yankoski
+  - Trenton W. Ford
+  - Diego Gomez-Zara
+date: 2025-09-28
 collection: publications
-category: manuscripts
-permalink: /publication/2015-10-01-paper-title-number-3
-excerpt: 'This paper is about the number 3. The number 4 is left for future work.'
-date: 2015-10-01
-venue: 'Journal 1'
-slidesurl: 'http://academicpages.github.io/files/slides3.pdf'
-paperurl: 'http://academicpages.github.io/files/paper3.pdf'
-citation: 'Your Name, You. (2015). &quot;Paper Title Number 3.&quot; <i>Journal 1</i>. 1(3).'
+category: conferences
+
+# — card fields — #
+venue: "ACM Symposium on User Interface Software and Technology (UIST) 2025 Demo"
+abbr: "NeurIPS 2025"
+preview: /images/virtlab-thumb.gif
+paperurl: "https://openreview.net/pdf?id=BX1BnepTZO"
+figlink: "[https://arxiv.org/abs/2508.04634](https://openreview.net/forum?id=BX1BnepTZO)"
+abstract: >
+  Enabling users to create their own simulations offers a powerful way to study how environments shape agent behavior 
+  and intelligence. We introduce VIRT-LAB, a system that allows researchers and practitioners to design interactive, 
+  customizable simulations of team dynamics with LLM-based agents situated in 2D spatial environments. …
+altmetric: 248277
 ---
 
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+<!-- Minimal inline style so the hero image pops even if custom.scss isn't loaded -->
+<style>
+  .pub-hero{margin:1rem 0 1.25rem}
+  .pub-thumb-link{display:inline-block;line-height:0;border-radius:12px;text-decoration:none}
+  .pub-thumb-link img{display:block;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,.08);transition:transform .18s ease,box-shadow .18s ease}
+  .pub-thumb-link:hover img,.pub-thumb-link:focus img{transform:translateY(-2px) scale(1.04);box-shadow:0 12px 30px rgba(0,0,0,.2)}
+  .pub-thumb-link:focus{outline:2px solid currentColor;outline-offset:3px}
+</style>
+
+<!-- Big hero image on the individual publication page -->
+<div class="pub-hero">
+  <a class="pub-thumb-link" href="{{ page.figlink | default: page.paperurl }}" target="_blank" rel="noopener">
+    <img src="{{ page.preview | relative_url }}" alt="VirT-Lab demo thumbnail" loading="lazy">
+  </a>
+</div>
