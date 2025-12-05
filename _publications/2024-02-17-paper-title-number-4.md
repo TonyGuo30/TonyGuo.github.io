@@ -10,8 +10,8 @@ category: conferences
 permalink: /publication/privacy-recall
 
 # — card fields — #
-venue: "ArXiv"
-abbr: "Preprint"
+venue: "ICHEC"
+abbr: "ICHEC '25"
 preview: /images/privacy_recall.png
 paperurl: "https://arxiv.org/pdf/2509.16962v1"
 figlink: "https://arxiv.org/abs/2509.16962"
