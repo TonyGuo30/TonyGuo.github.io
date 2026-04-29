@@ -20,18 +20,44 @@ Feel free to explore my website for more details on my research projects, public
 
 ---
 
-NEWS
-======
-- *2026-01-04*
-> My paper was accepted by **WWW '26** 🎉
-- *2025-09-18*
-> I will join the **IUI '26 PC** as a reviwer!
-- *2025-08-02*
-> Our paper was conditionally accepted by **UIST Demo '25** 🎉
-- *2025-06-01*
-> Join the RINGZ-Lab as an iSURE student advised by **Prof. Diego Gómez-Zará** 🎉
-- *2023-09-06*
-> Begun my undergraduate study at **University of Wisconsin - Madison** 🎉
+## News
+
+<section class="news-panel" aria-label="Recent news">
+  <div class="news-panel__header">
+    <div>
+      <span class="news-panel__eyebrow">Latest Updates</span>
+      <h3>Recent Highlights</h3>
+    </div>
+    <span class="news-panel__count">5 updates</span>
+  </div>
+
+  <div class="news-feed">
+    <article class="news-card news-card--featured">
+      <time datetime="2026-01-04">Jan 04, 2026</time>
+      <p>My paper was accepted by <strong>WWW '26</strong>.</p>
+    </article>
+
+    <article class="news-card">
+      <time datetime="2025-09-18">Sep 18, 2025</time>
+      <p>I will join the <strong>IUI '26 PC</strong> as a reviewer.</p>
+    </article>
+
+    <article class="news-card">
+      <time datetime="2025-08-02">Aug 02, 2025</time>
+      <p>Our paper was conditionally accepted by <strong>UIST Demo '25</strong>.</p>
+    </article>
+
+    <article class="news-card">
+      <time datetime="2025-06-01">Jun 01, 2025</time>
+      <p>Joined the RINGZ-Lab as an iSURE student advised by <strong>Prof. Diego Gómez-Zará</strong>.</p>
+    </article>
+
+    <article class="news-card">
+      <time datetime="2023-09-06">Sep 06, 2023</time>
+      <p>Began my undergraduate study at <strong>University of Wisconsin - Madison</strong>.</p>
+    </article>
+  </div>
+</section>
 
 ---
 
