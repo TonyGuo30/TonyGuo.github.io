@@ -31,6 +31,16 @@ abstract: >
   simulations of team dynamics with LLM-based agents situated in 2D spatial environments…
 altmetric: 248277
 selected: true
+bibtex: |
+  @misc{almutairi2025simulatingteamsllmagents,
+        title={Simulating Teams with LLM Agents: Interactive 2D Environments for Studying Human-AI Dynamics}, 
+        author={Mohammed Almutairi and Charles Chiang and Haoze Guo and Matthew Belcher and Nandini Banerjee and Maria Milkowski and Svitlana Volkova and Daniel Nguyen and Tim Weninger and Michael Yankoski and Trenton W. Ford and Diego Gomez-Zara},
+        year={2025},
+        eprint={2510.08242},
+        archivePrefix={arXiv},
+        primaryClass={cs.HC},
+        url={https://arxiv.org/abs/2510.08242}, 
+  }
 ---
 
 <!-- Minimal inline style so the hero image pops even if custom.scss isn't loaded -->

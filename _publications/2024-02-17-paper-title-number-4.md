@@ -20,6 +20,16 @@ abstract: >
   difference between the audience for a post the poster created and the 
   audience they recall at reuse time as time passes …
 altmetric: 248277
+bibtex: |
+  @misc{guo2026temporaldriftprivacyrecall,
+        title={Temporal Drift in Privacy Recall: Users Misremember From Verbatim Loss to Gist-Based Overexposure}, 
+        author={Haoze Guo and Ziqi Wei},
+        year={2026},
+        eprint={2509.16962},
+        archivePrefix={arXiv},
+        primaryClass={cs.HC},
+        url={https://arxiv.org/abs/2509.16962}, 
+  }
 ---
 
 <!-- Minimal inline style so the hero image pops even if custom.scss isn't loaded -->

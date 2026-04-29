@@ -58,13 +58,21 @@
     <p class="pub-authors">{{ author_str | strip }}.</p>
 
     <div class="pub-links">
+      {% if p.bibtex %}
+        <details class="pub-bibtex">
+          <summary>BiB</summary>
+          <div class="pub-bibtex__panel">
+            <button class="pub-bibtex__copy" type="button">Copy</button>
+            <pre><code>{{ p.bibtex | escape }}</code></pre>
+          </div>
+        </details>
+      {% endif %}
       {% if p.paperurl %}<a href="{{ p.paperurl | relative_url }}">PDF</a>{% endif %}
       {% if p.slidesurl %}<a href="{{ p.slidesurl | relative_url }}">Slides</a>{% endif %}
-      {% if p.bibtexurl %}<a href="{{ p.bibtexurl | relative_url }}">BibTeX</a>{% endif %}
       {% if p.doi %}<a href="https://doi.org/{{ p.doi }}">DOI</a>{% endif %}
       {% if p.html %}<a href="{{ p.html | relative_url }}">Project Page</a>{% endif %}
       {% if p.video %}<a href="{{ p.video }}" target="_blank">Video</a>{% endif %}
-      <a href="{{ p.url | relative_url }}">Details</a>
+      {% if p.bibtexurl %}<a href="{{ p.bibtexurl | relative_url }}">BibTeX File</a>{% endif %}
     </div>
 
     {% if p.abstract %}
@@ -93,11 +101,5 @@
       </div>
     {% endif %}
 
-    {% if p.bibtex_show and p.bibtex %}
-      <details class="pub-bibtex">
-        <summary>BibTeX</summary>
-        <pre><code>{{ p.bibtex | escape }}</code></pre>
-      </details>
-    {% endif %}
   </div>
 </article>

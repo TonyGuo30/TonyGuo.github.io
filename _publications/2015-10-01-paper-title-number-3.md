@@ -28,6 +28,15 @@ abstract: >
   and intelligence. We introduce VIRT-LAB, a system that allows researchers and practitioners to design interactive, 
   customizable simulations of team dynamics with LLM-based agents situated in 2D spatial environments. …
 altmetric: 248277
+bibtex: |
+  @inproceedings{
+  almutairi2025enabling,
+  title={Enabling User-Created Multi-Agent Simulations: Interactive and Customizable 2D Environments to Study Team Dynamics with {LLM} Agents},
+  author={Mohammed Almutairi and Charles Chiang and Haoze Guo and Nandini Banerjee and Maria Milkowski and Daniel Nguyen and Michael G Yankoski and Tim Weninger and Svitlana Volkova and Trenton W. Ford and Diego Gomez-Zara},
+  booktitle={Workshop on Scaling Environments for Agents},
+  year={2025},
+  url={https://openreview.net/forum?id=BX1BnepTZO}
+  }
 ---
 
 <!-- Minimal inline style so the hero image pops even if custom.scss isn't loaded -->

@@ -1,3 +1,39 @@
 <script type="module" src="{{ '/assets/js/main.min.js' | relative_url }}"></script>
 
+<script>
+  document.addEventListener("click", function(event) {
+    var copyButton = event.target.closest(".pub-bibtex__copy");
+    if (!copyButton) return;
+
+    var panel = copyButton.closest(".pub-bibtex__panel");
+    var citation = panel && panel.querySelector("code");
+    if (!citation) return;
+
+    var text = citation.textContent;
+    var setCopied = function() {
+      var original = copyButton.textContent;
+      copyButton.textContent = "Copied";
+      setTimeout(function() {
+        copyButton.textContent = original;
+      }, 1400);
+    };
+
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(setCopied);
+      return;
+    }
+
+    var textarea = document.createElement("textarea");
+    textarea.value = text;
+    textarea.setAttribute("readonly", "");
+    textarea.style.position = "absolute";
+    textarea.style.left = "-9999px";
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textarea);
+    setCopied();
+  });
+</script>
+
 {% include analytics.html %}

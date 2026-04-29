@@ -31,6 +31,17 @@ abstract: >
   environments …
 altmetric: 248277
 selected: true
+bibtex: |
+  @inproceedings{Almutairi_2025, series={UIST Adjunct '25},
+     title={VIRT-LAB: An AI-Powered System for Flexible, Customizable, and Large-scale Team Simulations},
+     url={http://dx.doi.org/10.1145/3746058.3758994},
+     DOI={10.1145/3746058.3758994},
+     booktitle={Adjunct Proceedings of the 38th Annual ACM Symposium on User Interface Software and Technology},
+     publisher={ACM},
+     author={Almutairi, Mohammed and Chiang, Charles and Guo, Haoze and Belcher, Matthew and Banerjee, Nandini and Milkowski, Maria and Volkova, Svitlana and Nguyen, Daniel and Weninger, Tim and Yankoski, Michael G and Ford, Trenton W and Gómez-Zará, Diego},
+     year={2025},
+     month=Sept, pages={1-6},
+     collection={UIST Adjunct '25} }
 ---
 
 <!-- Minimal inline style so the hero image pops even if custom.scss isn't loaded -->
