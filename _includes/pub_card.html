@@ -61,10 +61,6 @@
       {% if p.bibtex %}
         <details class="pub-bibtex">
           <summary>BiB</summary>
-          <div class="pub-bibtex__panel">
-            <button class="pub-bibtex__copy" type="button">Copy</button>
-            <pre><code>{{ p.bibtex | escape }}</code></pre>
-          </div>
         </details>
       {% endif %}
       {% if p.paperurl %}<a href="{{ p.paperurl | relative_url }}">PDF</a>{% endif %}
@@ -73,6 +69,12 @@
       {% if p.html %}<a href="{{ p.html | relative_url }}">Project Page</a>{% endif %}
       {% if p.video %}<a href="{{ p.video }}" target="_blank">Video</a>{% endif %}
       {% if p.bibtexurl %}<a href="{{ p.bibtexurl | relative_url }}">BibTeX File</a>{% endif %}
+      {% if p.bibtex %}
+        <div class="pub-bibtex__panel" hidden>
+          <button class="pub-bibtex__copy" type="button">Copy</button>
+          <pre><code>{{ p.bibtex | escape }}</code></pre>
+        </div>
+      {% endif %}
     </div>
 
     {% if p.abstract %}

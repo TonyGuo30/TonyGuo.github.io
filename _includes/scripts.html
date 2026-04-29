@@ -1,6 +1,15 @@
 <script type="module" src="{{ '/assets/js/main.min.js' | relative_url }}"></script>
 
 <script>
+  document.addEventListener("toggle", function(event) {
+    var bibDetails = event.target.closest && event.target.closest(".pub-bibtex");
+    if (!bibDetails) return;
+
+    var links = bibDetails.closest(".pub-links");
+    var panel = links && links.querySelector(".pub-bibtex__panel");
+    if (panel) panel.hidden = !bibDetails.open;
+  }, true);
+
   document.addEventListener("click", function(event) {
     var copyButton = event.target.closest(".pub-bibtex__copy");
     if (!copyButton) return;
