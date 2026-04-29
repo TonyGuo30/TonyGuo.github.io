@@ -1,13 +1,33 @@
 {%- assign p = include.page | default: page -%}
 {%- assign year = p.year | default: p.date | date: "%Y" -%}
-{%- assign authors = p.authors | default: p.author | split: "," -%}
+{%- assign badge_class = "" -%}
+{%- if p.abbr contains "WWW" -%}
+  {%- assign badge_class = " pub-badge--www" -%}
+{%- elsif p.abbr contains "CHI" -%}
+  {%- assign badge_class = " pub-badge--chi" -%}
+{%- elsif p.abbr contains "UIST" -%}
+  {%- assign badge_class = " pub-badge--uist" -%}
+{%- elsif p.abbr contains "NeurIPS" -%}
+  {%- assign badge_class = " pub-badge--neurips" -%}
+{%- elsif p.abbr contains "Preprint" -%}
+  {%- assign badge_class = " pub-badge--preprint" -%}
+{%- elsif p.abbr contains "ICHEC" -%}
+  {%- assign badge_class = " pub-badge--ichec" -%}
+{%- endif -%}
 {%- capture author_str -%}
-  {%- for a in authors -%}
-    {{ a | strip }}{%- unless forloop.last -%}, {% endunless -%}
-  {%- endfor -%}
+  {%- if p.authors -%}
+    {%- for a in p.authors -%}
+      {{ a | strip }}{%- unless forloop.last -%}, {% endunless -%}
+    {%- endfor -%}
+  {%- else -%}
+    {%- assign authors = p.author | split: "," -%}
+    {%- for a in authors -%}
+      {{ a | strip }}{%- unless forloop.last -%}, {% endunless -%}
+    {%- endfor -%}
+  {%- endif -%}
 {%- endcapture -%}
 
-<div class="pub-item">
+<article class="pub-item{% unless p.preview %} pub-item--no-thumb{% endunless %}">
   {% if p.preview %}
     {% assign rawhref = p.figlink | default: p.paperurl | default: p.link | default: p.url %}
     {% if rawhref contains '://' %}
@@ -25,11 +45,17 @@
 
 
   <div class="pub-body">
-    {% if p.abbr %}<span class="pub-badge">{{ p.abbr }}</span>{% endif %}
-    <span class="pub-authors">{{ author_str }}.</span>
-    <span class="pub-year"> {{ year }}.</span>
-    <span class="pub-title"><i>{{ p.title }}</i>.</span>
-    {% if p.venue %} <span class="pub-venue"> {{ p.venue }}.</span>{% endif %}
+    <div class="pub-meta">
+      {% if p.abbr %}<span class="pub-badge{{ badge_class }}">{{ p.abbr }}</span>{% endif %}
+      {% if p.venue %}<span class="pub-venue">{{ p.venue }}</span>{% endif %}
+      <span class="pub-year">{{ year }}</span>
+    </div>
+
+    <h3 class="pub-title">
+      <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
+    </h3>
+
+    <p class="pub-authors">{{ author_str | strip }}.</p>
 
     <div class="pub-links">
       {% if p.paperurl %}<a href="{{ p.paperurl | relative_url }}">PDF</a>{% endif %}
@@ -38,6 +64,7 @@
       {% if p.doi %}<a href="https://doi.org/{{ p.doi }}">DOI</a>{% endif %}
       {% if p.html %}<a href="{{ p.html | relative_url }}">Project Page</a>{% endif %}
       {% if p.video %}<a href="{{ p.video }}" target="_blank">Video</a>{% endif %}
+      <a href="{{ p.url | relative_url }}">Details</a>
     </div>
 
     {% if p.abstract %}
@@ -73,5 +100,4 @@
       </details>
     {% endif %}
   </div>
-</div>
-<hr>
+</article>

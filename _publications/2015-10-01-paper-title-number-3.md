@@ -22,7 +22,7 @@ venue: "Neural Information Processing Systems (NeurIPS 2025) Workshop"
 abbr: "NeurIPS 2025"
 preview: /images/virtlab-thumb.gif
 paperurl: "https://openreview.net/pdf?id=BX1BnepTZO"
-figlink: "[https://arxiv.org/abs/2508.04634](https://openreview.net/forum?id=BX1BnepTZO)"
+figlink: "https://openreview.net/forum?id=BX1BnepTZO"
 abstract: >
   Enabling users to create their own simulations offers a powerful way to study how environments shape agent behavior 
   and intelligence. We introduce VIRT-LAB, a system that allows researchers and practitioners to design interactive, 

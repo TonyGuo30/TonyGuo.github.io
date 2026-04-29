@@ -15,26 +15,30 @@ Currently, I am leading frontend development and backend optimization efforts fo
 
 Feel free to explore my website for more details on my research projects, publications, and technical background!
 
-> 📢 **I am actively looking for research opportunities in HCI related field! And also planning to PHD or Master degree!**
-{: .fancy}
+<div class="opportunity-callout">
+  <span class="opportunity-callout__label">📢 Open to opportunities</span>
+  <p>I am currently seeking research opportunities in HCI and AI-powered interactive systems, especially roles that could support my path toward graduate study.</p>
+</div>
 
 ---
 
 ## News
 
 <section class="news-panel" aria-label="Recent news">
-  <div class="news-panel__header">
-    <div>
-      <span class="news-panel__eyebrow">Latest Updates</span>
-      <h3>Recent Highlights</h3>
-    </div>
-    <span class="news-panel__count">5 updates</span>
-  </div>
-
   <div class="news-feed">
     <article class="news-card news-card--featured">
+      <time datetime="2026-04-18">Apr 18, 2026</time>
+      <p>My paper <strong>Behind the Feed</strong> was accepted to <strong>ESCSW Poster '26</strong>.</p>
+    </article>
+
+    <article class="news-card">
+      <time datetime="2026-04-13">Apr 13, 2026</time>
+      <p>My paper <strong>ConsentDiff at Scale</strong> was accepted to <strong>CHI EA '26</strong>.</p>
+    </article>
+
+    <article class="news-card">
       <time datetime="2026-01-04">Jan 04, 2026</time>
-      <p>My paper was accepted by <strong>WWW '26</strong>.</p>
+      <p>My paper <strong>Hidden-in-Plain-Text</strong> was accepted by <strong>WWW '26</strong>.</p>
     </article>
 
     <article class="news-card">
