@@ -11,7 +11,7 @@ permalink: /publication/privacy-recall
 
 # — card fields — #
 venue: "ICHEC"
-abbr: "ICHEC '25"
+abbr: "International Conference on Human-Engaged Computing '25"
 preview: /images/privacy_recall.png
 paperurl: "https://arxiv.org/pdf/2509.16962v1"
 figlink: "https://arxiv.org/abs/2509.16962"
